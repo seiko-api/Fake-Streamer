@@ -7,16 +7,16 @@ var uuid = ()=>([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g,a=>(a^Math.random()
 let client = new discord.Client()
 
 keepAlive()
-client.login(TOKEN)
+client.login("OTc2NDQ4NDQyNTQzMDA1Njk2.GRisZz.EifYo87heOsw77Betk07Fk8L6JbuSKIHUdZWsg")
  
 client.on("ready", () => {
-    rpcGenerator.getRpcImage("CLIENT_ID", "IMAGE_NAME")
+    rpcGenerator.getRpcImage("", "")
     .then(image => {
         let presence = new rpcGenerator.Rpc()
         .setName("twitch")
-        .setUrl("https://twitch.tv/SealedSaucer")
+        .setUrl("https://twitch.tv/rafasurya")
         .setType("STREAMING")
-        .setApplicationId("CLIENT_ID")
+        .setApplicationId("")
         .setAssetsLargeImage(image.id)
         .setAssetsLargeText("youtube.com/SealedSaucer")
         .setDetails("Subscribe!")
